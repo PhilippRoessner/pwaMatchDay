@@ -1,5 +1,5 @@
 {
-  "short_name": "Spieltag",
+  "short_name":"Spieltag",
   "name": "Bundesliga Spieltag",
   "description": "Übersicht der Spielergebnisse des Spieltags",
   "start_url": "./?i=skip_intro",
@@ -8,19 +8,19 @@
   "theme_color": "#263238",
   "icons": [
   {
-    "src": "img/icon48.png", "sizes": "48x48", "type": "image/png"
+    "src": "img/bundesliga_icon_48.png", "sizes": "48x48", "type": "image/png"
   },
   {
-    "src": "img/icon72.png", "sizes": "72x72", "type": "image/png"
+    "src": "img/bundesliga_icon_72.png", "sizes": "72x72", "type": "image/png"
   },
   {
-    "src": "img/icon96.png", "sizes": "96x96", "type": "image/png"
+    "src": "img/bundesliga_icon_96.png", "sizes": "96x96", "type": "image/png"
   },
   {
-    "src": "img/icon144.png", "sizes": "144x144", "type": "image/png"
+    "src": "img/bundesliga_icon_144.png", "sizes": "144x144", "type": "image/png"
   },
   {
-    "src": "img/icon358.png", "sizes": "358x358", "type": "image/png"
+    "src": "img/bundesliga_icon_358.png", "sizes": "358x358", "type": "image/png"
   }],
   "related_applications": [{
     "platform": "play",
