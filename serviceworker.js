@@ -1,6 +1,6 @@
 var CACHE_NAME = 'pwaMatchDay-v1';
 var urlsToCache = [
-  '/index.html',
+  '/',
   '/script.js',
   '/style.css',
   '/assets/css/bundesliga_header.css',
