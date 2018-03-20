@@ -30,7 +30,14 @@ async function handleFetch (request) {
   // if (request.url.endsWith("/cat.jpg")) {
   //   return cache.match("dog.jpg");
   // }
-  return cache.match(request);
+
+  var x = await cache.match(request);
+  if(!x){
+    var newresponse = await fetch(request);
+    await cache.put(request,newresponse.clone());
+    return newresponse;
+  }
+  return x;
 }
 
 self.addEventListener("fetch", (evt) => {
