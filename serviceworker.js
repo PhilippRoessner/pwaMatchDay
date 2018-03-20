@@ -1,3 +1,6 @@
+self.importScripts('team1.js');
+self.importScripts('team2.js');
+
 self.addEventListener('install', function(event) {
     console.log("addEventListener install");
     event.waitUntil(
@@ -10,8 +13,7 @@ self.addEventListener('install', function(event) {
 });
 
 
-
-
+x
   /*
 this.addEventListener('fetch', function(event) {
     console.log("addEventListener fetch");
