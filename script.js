@@ -189,4 +189,28 @@ const applyChanges = (data) => {
 // document.body.classList.add("loaded");
 
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('service-worker.js', { scope: './' })
+    .then(function (registration) {
+      let serviceWorker;
+      if (registration.installing) {
+        serviceWorker = registration.installing;
+      } else if (registration.waiting) {
+        serviceWorker = registration.waiting;
+      } else if (registration.active) {
+        serviceWorker = registration.active;
+      }
+      if (serviceWorker) {
+        serviceWorker.addEventListener('statechange', function (e) {
+          console.log(e.target.state);
+        });
+      }
+    }).catch (function (error) {
+      console.error("Something went wrong during registration. The service-worker.js file might be unavailable or contain a syntax error.");
+    });
+} else {
+  console.error("The current browser doesn't support service workers.");
+}
+
 })();
