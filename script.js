@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 
-
+/*
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('serviceworker.js', { scope: './' })
@@ -25,5 +25,20 @@ if ('serviceWorker' in navigator) {
 } else {
   console.error("The current browser doesn't support service workers.");
 }
+*/
+
+
+
+
+    navigator.serviceWorker.register("serviceworker.js")
+        .then(function handleSuccess (registration) {
+            // Zugriff auf den Worker, Statusinfos etc.
+        }, function handleError (err) {
+            // 404, Parse Error, anderer synchronerer Error
+        });
+
+
 
 })();
+
+

@@ -1,4 +1,5 @@
 self.addEventListener('install', function(event) {
+    console.log("addEventListener install");
     event.waitUntil(
         caches.open('v1').then(function(cache) {
             return cache.addAll([
@@ -7,8 +8,13 @@ self.addEventListener('install', function(event) {
         })
     );
 });
-  
+
+
+
+
+  /*
 this.addEventListener('fetch', function(event) {
+    console.log("addEventListener fetch");
     event.respondWith(
       caches.match(event.request).catch(function() {
         return fetch(event.request).then(function(response) {
@@ -20,3 +26,4 @@ this.addEventListener('fetch', function(event) {
       })
     );
   });
+*/
