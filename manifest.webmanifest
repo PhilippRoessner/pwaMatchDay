@@ -1,0 +1,33 @@
+// manifest.webmanifest
+{
+  "short_name": "Spieltag",
+  "name": "Bundesliga Spieltag",
+  "description": "Übersicht der Spielergebnisse des Spieltags",
+  "start_url": "./?i=skip_intro",
+  "display": "fullscreen",  // "standalone", "fullscreen", "browser" etc.
+  "background_color": "#F3F3F3",  // Hints für OS
+  "theme_color": "#263238",  // Hints für OS
+  "icons": [
+  {
+    "src": "img/icon48.png", "sizes": "48x48", "type": "image/png"
+  },
+  {
+    "src": "img/icon72.png", "sizes": "72x72", "type": "image/png"
+  },
+  {
+    "src": "img/icon96.png", "sizes": "96x96", "type": "image/png"
+  },
+  {
+    "src": "img/icon144.png", "sizes": "144x144", "type": "image/png"
+  },
+  {
+    "src": "img/icon358.png", "sizes": "358x358", "type": "image/png"
+  }],
+  "related_applications": [{  // alternative/ergänzende/native Apps
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.example.app1"
+  }, {
+    "platform": "itunes",
+    "url": "https://itunes.apple.com/app/example-app1/id123456789"
+  }]
+}
