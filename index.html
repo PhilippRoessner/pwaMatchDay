@@ -23,12 +23,11 @@
   <meta property="og:type" content="website" />
   <meta name="token" content="523ada89-07d0-426c-b34c-5ba36a06b302" />
 
-  <link rel="stylesheet" href="//s.bundesliga.com/2016/css/bundesliga.css">
-  <link rel="stylesheet" href="//s.bundesliga.com/2016/css/bundesliga_header.css">
-  <link rel="stylesheet" type="text/css" href="//s.bundesliga.com/css/print.css" id="css-print" media="print">
+  <link rel="stylesheet" href="./assets/css/bundesliga.css">
+  <link rel="stylesheet" href="./assets/css/bundesliga_header.css">
 
   <script src="//s.bundesliga.com/js/js_resources-2.js"></script>
-  <script type="text/javascript">
+    <script type="text/javascript">
       var avtConfigDS = { "DE": true, "EN": true, "PL": false, "JP": true, "ES": false };
       var avtConfigLoadAds = true;
       var avtConfigLanguage = location.pathname.substr(1,2).toUpperCase();
@@ -38,20 +37,9 @@
   </script>
 
 
-  <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
-  <script>
-      if(avtConfigLoadAds){
-          var googletag = googletag || {};
-          googletag.cmd = googletag.cmd || [];
-          googletag.cmd.push(function() {
-              googletag.pubads().disableInitialLoad();
-              googletag.enableServices();
-              googletag.pubads().collapseEmptyDivs(true);
-              googletag.pubads().enableSingleRequest();
-              googletag.enableServices();
-          });
-      }
-  </script>
+
+  <base href="https://www.bundesliga.com" />
+
 
   <script type="text/javascript">
       document.createElement( "picture" );
@@ -61,8 +49,6 @@
   <![endif]-->
   <script src="//s.bundesliga.com/2016/js/dsCommonJSHead.js" type="text/javascript"></script>
   <script src="//s.bundesliga.com/2016/js/dsCommonJSHeadi18n-2.js" type="text/javascript"></script>
-  <script src="//s.bundesliga.com/2016/js/include/timago_init.js"></script>
-  <script src="//s.bundesliga.com/2016/js/include/article2.js" type="text/javascript"></script>
   <!--
   <PageMap>
   <DataObject type="document">
@@ -73,7 +59,6 @@
   </PageMap>
   -->
 
-
   <script> var dataLayer = window.dataLayer || []; dataLayer.push( { 'ivw_cp': 'en.matchday' }, {'ivw_sv': 'i2' } ); dataLayer.push( {'releasedate': '2018-03-20T03:09:03.321+01:00' , 'contentGroup': 'Matchday' } );  </script>
 
 
@@ -83,42 +68,7 @@
   <link rel="canonical" href="https://www.bundesliga.com/en/bundesliga/matchday/2017-2018/" />
 
 </head>
-<body id="body" cz-shortcut-listen="true" data-ng-app="dflApp" >
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NLQHQQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<div class="cookieconsent" style="display: none;">
-  <div>
-    <span>We make use of cookies to enhance your user experience. By clicking "OK" without altering your cookie preferences, you are giving us your consent to use cookies. For further information, please read our <a href="../../../cookies/index.jsp">information on the use of cookies</a>.</span>
-    <span class="ok">OK</span>
-  </div>
-</div>
-<div id="loginCloseListener"></div>
-
-
-
-
-
-
-
-<script type="text/javascript" lang="javascript" src="https://cdns.gigya.com/JS/gigya.js?apikey=3_tQWqB95PCJiqCeljbI7N3oOEiX_q4-wobViZ6EYqtb6vYsZDYQqgPT1Z4O6btnKh">
-    {
-        lang: "en"
-    }
-</script>
-<script src="//s.bundesliga.com/2016/js/ds_gigya_global.js"></script>
-<script type="text/javascript">
-    var interval=window.setInterval(function(){
-        if(window.gigya){
-            window.clearInterval(interval);
-            dsGigyaGlobal(
-                {
-                    'lang': 'en',
-                    'debugMode': false
-                });
-            dsGigyaGlobal.prototype.initialize();
-        }
-    },200);
-</script>
-
+<body id="body" >
 
 
 <div id="hideHeader">
@@ -287,21 +237,10 @@
     </script>
 
 
-
-
   </header>
 </div>
 
-<script src="//s.bundesliga.com/2016/js/ds_broadcaster_logo.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $(document).ready(function()
-    {
-        $(".bl-broadcaster").dsBroadcasterLogo(
-            {
-                dataUrl: 'https://api.bundesliga.com/v1/broadcaster/ip'
-            });
-    });
-</script>
+
 
 
 <div id="pagewrapper">
@@ -419,6 +358,9 @@
     <script src="//s.bundesliga.com/2016/js/dsCommonJSFoot.js" type="text/javascript"></script>
   </div>
 </div>
+
+
+
 </body>
 </html>
 
