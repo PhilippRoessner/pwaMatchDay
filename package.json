@@ -1,0 +1,25 @@
+{
+  "name": "pwamatchday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilippRoessner/pwaMatchDay.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhilippRoessner/pwaMatchDay/issues"
+  },
+  "homepage": "https://github.com/PhilippRoessner/pwaMatchDay#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
